@@ -7,8 +7,8 @@ let templeList = [];
 /* async displayTemples Function */
 
 const displayTemples = (temples) => {
-
-    templeList.forEach(temple => {
+    templesElement.innerHTML = "";
+    temples.forEach(temple => {
 
         const templeArticle = document.createElement('article');
 
@@ -37,7 +37,8 @@ const displayTemples = (temples) => {
 
 const getTemples = async () => {
     const response = await fetch("https://byui-cse.github.io/cse121b-ww-course/resources/temples.json");
-    templeList = await response.json();
+    data = await response.json();
+    templeList.push(...data);
     //console.log(response);
     displayTemples(templeList);
     //console.log(templeList);
@@ -45,7 +46,7 @@ const getTemples = async () => {
 
 /* reset Function */
 const reset = () => {
-    templesElement.textContent = "";
+    templesElement.innerHTML = "";
 };
 
 /* sortBy Function */
@@ -55,23 +56,24 @@ const sortBy = (temples) => {
 
     switch (filter) {
         case "utah":
-            displayTemples(temples.filter(utahTemple => utahTemple.location.includes("Utah")));
+            displayTemples(temples.filter(temple => temple.location.includes("Utah")));
             break;
         case "notutah":
-            displayTemples(temples.filter(utahTemple => !utahTemple.location.includes("Utah")));
+            displayTemples(temples.filter(temple => !temple.location.includes("Utah")));
             break;
         case "older":
-            displayTemples(temples.filter(utahTemple => new Date(utahTemple.dedicated) < new Date(1950, 0, 1)));
+            displayTemples(temples.filter((temple) => new Date(temple.dedicated) < new Date(1950, 0, 1)));
+            break;
+        case "alphabhetically":
+            displayTemples(temples.sort((temple1, temple2) => (temple1.templeName > temple2.templeName) ? 1 : -1));
             break;
         default:
-            displayTemples();
+            displayTemples(temples);
     };
-
 };
 
 
 /* Event Listener */
-document.querySelector("#sortBy").addEventListener("change", () => { sortBy(templeList) });
-
+document.getElementById("sortBy").addEventListener("change", () => { sortBy(templeList); });
 
 getTemples();
