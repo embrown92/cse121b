@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 121b | W05: Programming Tasks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="w01-task.html">W1 Task</a></li>
+            <li><a href="w03-task.html">W3 Task</a></li>
+            <li><a href="w04-task.html">W4 Task</a></li>
+            <li><a href="w05-task.html" class="active">W5 Task</a></li>
+            <li><a href="project.html">Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>
+            CSE 121B Project Proposal
+            <br>
+            <br>
+
+            1. What is the title of your program?
+            <br>
+            **Image Search App using the free Unplash API
+            <br>
+            <br>
+
+            2. What real-world problem will your program address or help to solve?
+            <br>
+            **Help users find the image they need using key word search.
+            <br>
+            <br>
+
+            3. What will you learn from developing this program?
+            <br>
+            ** - Learn how to use third party api
+            - Learn how to fetch JSON
+            - Learn how to create javaScript apps using the ES modules
+        </p>
+
+    </main>
+
+
+    <footer>
+        &copy;<span id="year"></span> | Final Project | CSE 121b
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

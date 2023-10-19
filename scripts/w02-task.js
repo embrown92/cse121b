@@ -8,7 +8,7 @@ const fullName = "Eda Mae Brown";
 const currentYear = new Date();
 let year = currentYear.getFullYear();
 
-const profilePicture = "./images/profile.png";
+let profilePicture = "./images/profile.png";
 
 /* Step 3 - Element Variables */
 const nameElement = document.getElementById("name");
