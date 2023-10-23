@@ -1,13 +1,10 @@
-import { searchForm, showMoreBtn, page, searchImages, reset } from './imageSearch.js';
+import { searchForm, page, searchImages, reset } from './imageSearch.js';
 
 
 async function awaitSearchImages() {
     const result = await searchImages();
     //console.log(result);
 };
-
-
-showMoreBtn.style.display = "block";
 
 searchForm.addEventListener("submit", (e) => {
     reset();
@@ -16,11 +13,6 @@ searchForm.addEventListener("submit", (e) => {
     searchImages();
 });
 
-// show more pages
-showMoreBtn.addEventListener("click", () => {
-    searchImages();
-    page++;
-});
 
 
 awaitSearchImages();
