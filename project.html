@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="Project/project.css">
 </head>
 
 <body>
@@ -19,42 +20,39 @@
             <li><a href="w01-task.html">W1 Task</a></li>
             <li><a href="w03-task.html">W3 Task</a></li>
             <li><a href="w04-task.html">W4 Task</a></li>
-            <li><a href="w05-task.html" class="active">W5 Task</a></li>
-            <li><a href="project.html">Project</a></li>
+            <li><a href="w05-task.html">W5 Task</a></li>
+            <li><a href="project.html" class="active">Project</a></li>
         </ul>
     </nav>
     <main>
-        <p>
-            CSE 121B Project Proposal
-            <br>
-            <br>
+        <h1>Image Seach <br> Engine</h1>
 
-            1. What is the title of your program?
-            <br>
-            **Image Search App using the free Unplash API
-            <br>
-            <br>
+        <form id="search-form">
+            <input type="text" id="search-box" placeholder="Type search keyword here...">
+            <button class="btn-grad">SEARCH</button>
+        </form>
 
-            2. What real-world problem will your program address or help to solve?
-            <br>
-            **Help users find the image they need using key word search.
-            <br>
-            <br>
-
-            3. What will you learn from developing this program?
-            <br>
-            ** - Learn how to use third party api
-            - Learn how to fetch JSON
-            - Learn how to create javaScript apps using the ES modules
-        </p>
+        <!--Display image section-->
+        <div id="search-result"></div>
+        <button id="show-more-btn">Show More</button>
 
     </main>
 
 
     <footer>
+
+        <p>
+            Made By Eda Mae Brown <br>
+            All Image Copyright belongs to www.unsplash.com
+        </p>
+
         &copy;<span id="year"></span> | Final Project | CSE 121b
+
     </footer>
     <script src="scripts/main.js"></script>
+    <script async type="module" src="Project/scripts/module.js"></script>
+    <script async type="module" src="/Project/scripts/imageSearch.js"></script>
+
     <script>
         document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
