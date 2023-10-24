@@ -1,0 +1,23 @@
+CSE 121B Project Proposal
+
+ 
+
+            1. What is the title of your program?
+
+            -Image Search App using the free Unplash API.
+
+ 
+
+            2. What real-world problem will your program address or help to solve?
+
+            -Help users find the image they need using key word search.
+
+ 
+
+            3. What will you learn from developing this program?
+
+             - Learn how to use third party api
+
+            - Learn how to fetch JSON
+
+            - Learn how to create javaScript apps using the ES modules

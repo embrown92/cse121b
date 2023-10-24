@@ -1,0 +1,22 @@
+What success have you noted and are most proud of during 
+the design and development of your project?
+*Working with the HTML and CSS part of the project was very straighforward. 
+*Planning and putting together the different elements that needs to be in the 
+program was also relatively easy. 
+
+
+What challenges have you run into during the development?
+*Everything was working out find at the beginning when all my code was placed
+all in one file. However, I really did ran a few hurdles trying to get to it work 
+once it was broken up into the main.js and modules. The file kept crashing and I had to
+do quite a few modification. Overall, it was a great learning process for me as it
+helped me understand a little bit more how to work with ES modules and which parts of the code to export and import.
+
+
+Name two (2) to three (3) resources that you have found useful 
+during the the course to complete tasks like this project. 
+Why have they been especially useful to you?
+* I have an account with Codecademy.org and I was able to find a lot of great help there.
+* Looking at similar problems encountered in stackoverflow.com really helped me overcome some of mine too.
+*Reading documentation and looking at examples in mdn web docs through developer/moxilla.org really helped
+me understand how to use different syntax. 

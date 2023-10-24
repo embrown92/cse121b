@@ -34,6 +34,12 @@ h1 {
     -3px 7px 1px #f67280, -4px 9px 1px #f8b195, -5px 11px 1px #43cea2;
 }
 
+h3,
+h6 {
+  text-align: center;
+  margin: 20px;
+}
+
 form {
   width: 90%;
   max-width: 600px;

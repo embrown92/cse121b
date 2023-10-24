@@ -27,6 +27,9 @@
     <main>
         <h1>Image Seach <br> Engine</h1>
 
+        <h3>Most Popular Image Search Keywords</h3>
+        <h6 id="popular-keywords"></h6>
+
         <form id="search-form">
             <input type="text" id="search-box" placeholder="Search anything here...">
             <button class="btn-grad">SEARCH</button>
@@ -43,7 +46,7 @@
     <script src="scripts/main.js"></script>
     <script async type="module" src="Project/scripts/module.js"></script>
     <script async type="module" src="/Project/scripts/imageSearch.js"></script>
-
+    <script src="/Project/scripts/keywords.js"></script>
     <script>
         document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
