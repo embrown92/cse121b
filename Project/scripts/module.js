@@ -1,26 +1,14 @@
-import { searchForm, showMoreBtn, page, searchImages, reset } from './imageSearch.js';
+import { showMoreBtn, searchForm, searchImages, reset } from './imageSearch.js';
 
-
-async function awaitSearchImages() {
-    const result = await searchImages();
-    //console.log(result);
-};
-
-
-showMoreBtn.style.display = "block";
-
-searchForm.addEventListener("submit", (e) => {
+// submit keyword to fetch images from api
+searchForm.addEventListener("submit", (event) => {
     reset();
-    e.preventDefault();
-    let page = 1;
+    event.preventDefault();
     searchImages();
 });
 
 // show more pages
 showMoreBtn.addEventListener("click", () => {
     searchImages();
-    page++;
 });
 
-
-awaitSearchImages();
